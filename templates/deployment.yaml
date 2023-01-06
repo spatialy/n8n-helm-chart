@@ -46,7 +46,7 @@ spec:
             - name: "N8N_EDITOR_BASE_URL"
               value: {{ .Values.config.protocol }}://{{ .Values.config.baseURL }}
             - name: "WEBHOOK_URL"
-            value: {{ .Values.config.protocol }}://{{ .Values.config.baseURL }}
+              value: {{ .Values.config.protocol }}://{{ .Values.config.baseURL }}
             - name: "N8N_ENCRYPTION_KEY"
               valueFrom:
                 secretKeyRef:
