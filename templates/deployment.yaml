@@ -44,9 +44,9 @@ spec:
             - name: "N8N_PORT" #! we better set the port once again as ENV Var, see: https://community.n8n.io/t/default-config-is-not-set-or-the-port-to-be-more-precise/3158/3?u=vad1mo
               value: "5678"
             - name: "N8N_EDITOR_BASE_URL"
-              value: {{ .Values.config.baseURL }}
+              value: {{ $.Values.config.baseURL }}
             - name: "WEBHOOK_URL"
-              value: {{ .Values.config.webhookURL }}
+              value: {{ $.Values.config.webhookURL }}
             - name: "N8N_ENCRYPTION_KEY"
               valueFrom:
                 secretKeyRef:
